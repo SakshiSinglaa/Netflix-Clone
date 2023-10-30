@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monospace', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Monospace', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 170px;
+    margin-top: 20px;
+}
+
+.nav {
+    justify-content: space-between;
+    text-align: end;
+    margin-right: 10%;
+    margin-top: 2px;
+    padding: 10px;
+    height: fit-content;
+}
+
+.lang {
+    background: black;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8%;
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.sign-in {
+    background: rgb(249, 30, 30);;
+    color: #fff;
+    border-width: 0;
+    border-radius: 8%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sign-in a {
+    color: #fff;
+    text-decoration: solid;
+}
+
+.header-content {
+    justify-content: space-around;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 190px;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    line-height: 60px;
+}
+
+.h3 {
+    font-size: 25px; 
+    line-height: 80px;
+}
+
+.email-signup {
+    justify-content: center;
+    background-color:rgba(126, 123, 123, 0.422);
+    display: flex;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.email {
+    padding: 15px;
+    flex: 1;
+    margin: 5px;
+    font-size: 20px;
+    padding-right: 100px;
+    align-items: center;
+} 
+
+.button {
+    background: rgb(249, 30, 30);
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    flex: 1;
+    border: 0;
+    margin: 0;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.features {
+    padding: 50px 10%;
+    font-size: 25px;
+    border-top: 6px solid #333;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-top: 6px solid #333;
+}
+
+.text {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.features h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+.img {
+    flex-basis: 50%;
+    margin-bottom: auto;    
+}
+
+.img img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.faq {
+    font-family: 'Monospace', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 50px 12%;
+    border-top: 6px solid #333;
+}
+
+.faq h2 {
+    font-weight: 400;
+    font-size: 40px;
+    
+}
+
+.faqs {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1000px;
+    font-weight: normal;
+}
+
+.faqs li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.faqs li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.2s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.faqs .content {
+    background: #303030;
+    text-align: left;
+    font-size: 20px;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s padding 0.2s;
+}
+
+.faqs input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.faqs input[type="radio"]:checked + label::after {
+    transform: rotate(45deg);
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h3 a{
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.footer .row {
+    border-top: none;
+}
+
+.footer .column {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .column a {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .txt {
+    margin-top: 30px;
+    font-size: 14px;
+
+}
